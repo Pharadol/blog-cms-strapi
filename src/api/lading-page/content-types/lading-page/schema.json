@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "lading_pages",
+  "info": {
+    "singularName": "lading-page",
+    "pluralName": "lading-pages",
+    "displayName": "lading-page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "menus": {
+      "type": "json"
+    }
+  }
+}

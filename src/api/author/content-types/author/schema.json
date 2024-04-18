@@ -33,6 +33,12 @@
       ],
       "type": "media",
       "multiple": false
+    },
+    "special_blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::special-blog.special-blog",
+      "mappedBy": "author"
     }
   }
 }

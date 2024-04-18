@@ -4,7 +4,8 @@
   "info": {
     "singularName": "special-blog",
     "pluralName": "special-blogs",
-    "displayName": "special-blog"
+    "displayName": "special-blog",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,21 +15,25 @@
     "title": {
       "type": "string"
     },
-    "description": {
+    "detail": {
       "type": "text"
     },
     "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
-    "detail": {
-      "type": "blocks"
+    "author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::author.author",
+      "inversedBy": "special_blogs"
     }
   }
 }
